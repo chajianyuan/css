@@ -1,0 +1,32 @@
+#main {
+  -webkit-column-width: 202px;
+  -moz-column-width: 202px;
+  -moz-column-width: 202px;
+  -ms-column-width: 202px;
+  /* -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3; */
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  -moz-column-gap: 5px;
+  -ms-column-gap: 5px;
+  column-fill: balance;
+}
+
+.box {
+  padding: 10px 0 0 15px;
+}
+
+.pic {
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  width: 165px;
+}
+
+.pic img {
+  display: block;
+  width: 165px;
+  height: auto;
+}

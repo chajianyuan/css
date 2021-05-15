@@ -1,0 +1,39 @@
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* 容器必须有固定高度
+   * 且高度大于最高的列高 */
+  height: 2000px;
+  width: 500px;
+  align-content: space-between;
+}
+
+/* 强制换列 */
+#main::before,
+#main::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.box:nth-child(2n+1) {
+  order: 1;
+}
+.box:nth-child(2n) {
+  order: 2;
+}
+
+.box {
+  width: 32%;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 10px;
+}
+
+.box img {
+  width: 100%;
+}
